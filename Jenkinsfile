@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'start build'
         sh 'git pull'
-        sh 'python testpy.py'
+        sh 'ls'
       }
     }
   }
