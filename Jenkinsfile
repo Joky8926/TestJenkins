@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('build') {
       steps {
-        echo 'test msg'
+        echo 'start build'
+        sh 'git pull'
       }
     }
   }
