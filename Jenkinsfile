@@ -4,8 +4,8 @@ pipeline {
     stage('build') {
       steps {
         echo 'start build'
-        sh 'git pull'
         sh 'ls'
+        sh 'python testpy.py'
       }
     }
   }
