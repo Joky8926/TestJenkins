@@ -6,6 +6,7 @@ pipeline {
         echo 'start build'
         sh 'git pull'
         sh 'python testpy.py'
+        sh 'pwd'
       }
     }
   }
